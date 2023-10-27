@@ -1,9 +1,9 @@
 import CartWidget from './CartWidget';
-import ItemListContainer from './ItemList'
+import ItemListContainer from './ItemListContainer'
 const NavBar = () => {
     return (
         <nav>
-            {<nav className="navbar navbar-expand-lg custom-navbar">
+            {<div className="navbar navbar-expand-lg custom-navbar">
                         <div className="container-fluid">
                             <a className="navbar-brand d-none d-lg-none d-md-none" href="#"><img src="../public/assets/img/nav1.png" alt="" /></a>
                             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
@@ -39,7 +39,7 @@ const NavBar = () => {
                                 </div>
                             </div>
                         </div>
-                    </nav>}
+                    </div>}
         </nav>
     );
 }
