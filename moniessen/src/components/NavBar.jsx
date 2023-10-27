@@ -1,5 +1,5 @@
-
-
+import CartWidget from './CartWidget';
+import ItemListContainer from './ItemList'
 const NavBar = () => {
     return (
         <nav>
@@ -32,6 +32,10 @@ const NavBar = () => {
                                     </ul>
                                     <a className="nav-link" href="./pages/recetas.html">RECETAS</a>
                                     <a className="nav-link" href="./pages/contacto.html">CONTACTO</a>
+                                </div>
+                                <div id="carrito" class="carrito">
+                                <CartWidget/>
+                                <ItemListContainer/>
                                 </div>
                             </div>
                         </div>
