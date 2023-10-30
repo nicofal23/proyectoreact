@@ -1,5 +1,4 @@
-import CartWidget from './CartWidget';
-import ItemListContainer from './ItemListContainer'
+import CartWidget from '../CartWidget/CartWidget'
 const NavBar = () => {
     return (
         <nav>
@@ -35,7 +34,6 @@ const NavBar = () => {
                                 </div>
                                 <div id="carrito" class="carrito">
                                 <CartWidget/>
-                                <ItemListContainer/>
                                 </div>
                             </div>
                         </div>
