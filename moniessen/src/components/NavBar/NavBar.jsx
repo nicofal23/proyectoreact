@@ -1,4 +1,5 @@
 import CartWidget from '../CartWidget/CartWidget'
+import {header,} from 'NavBar.modulo.css'
 const NavBar = () => {
     return (
         <nav>
