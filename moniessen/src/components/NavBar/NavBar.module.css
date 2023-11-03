@@ -1,28 +1,10 @@
-
-
-body {
-  background-image: url(../assets/img/fondoessen.png);
-  background-size: cover;
-}
-header {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-header div {
-  display: flex;
-  align-items: center;
-  margin-left: 30px;
-  margin-right: 30px;
-}
-header .navbar-nav a {
+.navbar {
   text-decoration: none;
   color: #e878a2;
   position: relative;
   font-size: 20px;
 }
-header .navbar-nav a::before {
+.navbar::before {
   content: '';
   position: absolute;
   bottom: 0;
@@ -35,7 +17,7 @@ header .navbar-nav a::before {
   transform-origin: center;
   transition: transform 0.5s ease-in-out;
 }
-header .navbar-nav a:hover::before {
+.navbar:hover::before {
   transform: scaleX(1);
 }
 .titulo {
@@ -54,7 +36,7 @@ header .navbar-nav a:hover::before {
   margin: 20px;
 }
 
-#carrito {
+.carrito {
   border: none;
   color: #0a0a0a;
   font-size: 30px;
@@ -63,32 +45,26 @@ header .navbar-nav a:hover::before {
   padding: 10px 20px;
 }
 
-#carrito:hover {
+.carrito:hover {
   color: rgba(255, 255, 255, 0);
   background-color: rgba(130, 236, 135, 0.171);
 }
 
-#cantidadCarrito {
+.cantidadCarrito {
   color: black;
 }
 
-.carrito img {
+.img {
   width: 40px;
 }
 
-.contenedorcarrito {
-  display: flex;
-  flex-direction: row;
-  justify-content: end;
-  margin: 20px;
-}
 
 .carrito {
   background-color: transparent;
   border: none;
 }
 
-.carrito button {
+.button {
   background-color: transparent;
   border: none;
 }
