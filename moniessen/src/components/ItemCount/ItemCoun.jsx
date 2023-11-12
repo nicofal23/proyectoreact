@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useState} from "react";
+import styles from "../ItemCount/ItemCoun.module.css"
 
 const ItemCount = ({ stock, inicial, onAdd }) => {
   const [cantidad, setCantidad] = useState(inicial);
@@ -16,18 +17,14 @@ const ItemCount = ({ stock, inicial, onAdd }) => {
   };
 
   return (
-    <div className="contador">
-      <div className="control">
-        <button className="boton" onClick={quitar}>-</button>
+    <div className={styles.contador}>
+      <div className={styles.control}>
+        <button className={styles.boton} onClick={quitar}>-</button>
         <h4 className="numero">{cantidad}</h4>
-        <button className="boton" onClick={incrementar}>+</button>
+        <button className={styles.boton} onClick={incrementar}>+</button>
       </div>
       <div>
-        <button
-          className="boton"
-          onClick={() => onAdd(cantidad)}
-          disabled={stock === 0} // Usar 'stock === 0' en lugar de '!stock'
-        >
+        <button className={styles.boton} onClick={() => onAdd(cantidad)} disabled={stock === 0}>
           Agregar al carrito
         </button>
       </div>

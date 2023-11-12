@@ -1,0 +1,11 @@
+.ListaGrupo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Distribuir los elementos uniformemente */
+  }
+  
+  .CardItem {
+    width: calc(33.33% - 10px); /* Espacio para tres tarjetas con espacio entre ellas */
+    margin-bottom: 20px; /* Espacio entre filas */
+  }
+  

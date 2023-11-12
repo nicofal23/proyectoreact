@@ -7,6 +7,7 @@ import NavBar from'./components/NavBar/NavBar';
 import ItemListContainer from './components/ItemListCointainer/ItemListContainer';
 import ImagenLogo from './components/Logo/ImagenLogo';
 import ItemCount from './components/ItemCount/ItemCoun';
+import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer'
 
 const App = () => {
     return (
@@ -14,10 +15,11 @@ const App = () => {
         <header>
             <ImagenLogo />
             <NavBar/>
-            <ItemListContainer greeting= {"Bienvenidos!"} />
         </header>
         <main>
-            <ItemCount inicial={1} stock={10} onAdd={(cantidad) => console.log('cantidad agregada',cantidad)}/>
+            <ItemListContainer greeting= {"Bienvenidos!"} />
+            <ItemDetailContainer/>
+            <ItemCount inicial={1} stock={15} onAdd={(cantidad) => console.log('cantidad agregada',cantidad)}/>
         </main>
         </>
     );
