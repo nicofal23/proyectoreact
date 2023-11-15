@@ -3,7 +3,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import './components/NavBar/NavBar.module.css'
 import './app.css';
-import NavBar from'./components/NavBar/NavBar';
 import ImagenLogo from './components/Logo/ImagenLogo';
 import RouterPrincipal from './routers/RouterPrincipal';
 const App = () => {

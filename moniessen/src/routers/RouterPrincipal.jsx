@@ -1,20 +1,26 @@
-import {Route, Routes , BrowserRouter as Router, BrowserRouter} from "react-router-dom"
-import ItemListContainer from '../components/ItemListCointainer/ItemListContainer'
-import ItemDetailContainer from '../components/ItemDetailContainer/ItemDetailContainer'
-export default function RouterPrincipal() {
-    return (
+import { Route, Routes, BrowserRouter } from "react-router-dom";
+import ItemListContainer from "../components/ItemListCointainer/ItemListContainer";
+import ItemDetailContainer from "../components/ItemDetailContainer/ItemDetailContainer";
+import NavBar from "../components/NavBar/NavBar";
+
+const RouterPrincipal = () => {
+  return (
+    <BrowserRouter>
+      {/* Solo necesitas BrowserRouter en el nivel más alto */}
       <>
-        <BrowserRouter>
-        <Router>
-            <NavBar/>
-        </Router>
+        <NavBar />
         <Routes>
-            <Route path='/' element={<ItemListContainer/>}/>
-            <Route path='/category/:categoryId' element={<ItemListContainer/>}></Route>
-            <Route path='/item/:itemId' element={<ItemDetailContainer/>}></Route>
-            <Route path='*' element={<h1>404 NOT FOUND</h1>}/>
+          <Route path="/" element={<ItemListContainer />} />
+          <Route
+            path="/category/:categoryId"
+            element={<ItemListContainer />}
+          ></Route>
+          <Route path="/item/:itemId" element={<ItemDetailContainer />} />
+          <Route path="*" element={<h1>404 NOT FOUND</h1>} />
         </Routes>
-        </BrowserRouter>
       </>
-    );
-  }
+    </BrowserRouter>
+  );
+};
+
+export default RouterPrincipal;

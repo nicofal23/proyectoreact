@@ -12,13 +12,13 @@ const NavBar = () => {
             </ul>
                     <ul>
                         <li>
-                            <Link to={`/category/ollas`}className={({isActive})=> isActive ? 'ActiveOption' : 'Option'}>Ollas</Link>
+                            <Link to={`/category/ollas`} className={({isActive})=> isActive ? 'ActiveOption' : 'Option'}>Ollas</Link>
                         </li>
                         <li>
-                            <Link to={`/category/jarras`}className={({isActive})=> isActive ? 'ActiveOption' : 'Option'}>Jarras</Link>
+                            <Link to={`/category/jarras`} className={({isActive})=> isActive ? 'ActiveOption' : 'Option'}>Jarras</Link>
                         </li>
                         <li>
-                            <Link to={`/category/sarten`}className={({isActive})=> isActive ? 'ActiveOption' : 'Option'}>Sartén</Link>
+                            <Link to={`/category/sarten`} className={({isActive})=> isActive ? 'ActiveOption' : 'Option'}>Sartén</Link>
                         </li>
                     </ul>
             <div id="carrito" className="carrito">
