@@ -3,7 +3,7 @@ const productos = [
         id:'1',
         nombre: 'Olla Essen',
         precio: '68000',
-        categoria: 'Ollas',
+        category: 'Ollas',
         img: 'https://http2.mlstatic.com/D_NQ_NP_632376-MLA43716907871_102020-O.webp',
         stock: '30',
         descripcion: 'olla essen 1'
@@ -12,7 +12,7 @@ const productos = [
         id:'2',
         nombre: 'Olla Essen 2',
         precio: '78000',
-        categoria: 'Ollas',
+        category: 'jarra',
         img: 'https://http2.mlstatic.com/D_NQ_NP_632376-MLA43716907871_102020-O.webp',
         stock: '20',
         descripcion: 'olla essen 2'
@@ -21,7 +21,7 @@ const productos = [
         id:'3',
         nombre: 'linea contemporanea Essen',
         precio: '68000',
-        categoria: 'Ollas',
+        category: 'Ollas',
         img: '',
         stock: '30',
         descripcion: 'olla essen 1'
@@ -30,7 +30,7 @@ const productos = [
         id:'4',
         nombre: 'Olla Essen',
         precio: '68000',
-        categoria: 'Ollas',
+        category: 'Ollas',
         img: '',
         stock: '30',
         descripcion: 'olla essen 1'
@@ -39,7 +39,7 @@ const productos = [
         id:'5',
         nombre: 'Olla Essen',
         precio: '68000',
-        categoria: 'Ollas',
+        category: 'sarten',
         img: '',
         stock: '30',
         descripcion: 'olla essen 1'
