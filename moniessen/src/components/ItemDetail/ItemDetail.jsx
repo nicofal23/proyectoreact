@@ -3,6 +3,7 @@ import ItemCount from '../ItemCount/ItemCoun';
 
 const ItemDetail = ({ id, nombre, img, precio, stock, categoria, descripcion }) => {
     return (
+        <div className={styles.divcard}>
         <article className={styles.CardItem}>
             <header className={styles.Header}>
                 <h2 className={styles.ItemHeader}>
@@ -24,9 +25,10 @@ const ItemDetail = ({ id, nombre, img, precio, stock, categoria, descripcion }) 
                 </p>
             </section>
             <footer className={styles.ItemFooter}>
-                <ItemCount initial={1} stock={stock} onAdd={() => console.log('cantidad agregada')} />
+                <ItemCount inicial={1} stock={stock} onAdd={() => console.log('cantidad agregada')} />
             </footer>
         </article>
+        </div>
     );
 };
 

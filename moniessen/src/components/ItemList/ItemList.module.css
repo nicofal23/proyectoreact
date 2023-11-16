@@ -1,7 +1,8 @@
 .ListaGrupo {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between; /* Distribuir los elementos uniformemente */
+    justify-content: center;
+    align-items: center; /* Distribuir los elementos uniformemente */
   }
   
   .CardItem {

@@ -1,0 +1,66 @@
+[
+    {
+      "id": "1",
+      "nombre": "Olla Essen 1",
+      "precio": "68000",
+      "category": "ollas",
+      "img": "https://www.essen.com.ar/contenido/objetos/1/Sarten%2024%20Fuego%20web.jpg",
+      "stock": "30",
+      "descripcion": "olla essen 1"
+    },
+    {
+      "id": "2",
+      "nombre": "Jarra Essen 1",
+      "precio": "78000",
+      "category": "jarras",
+      "img": "https://http2.mlstatic.com/D_NQ_NP_632376-MLA43716907871_102020-O.webp",
+      "stock": "20",
+      "descripcion": "Jarra Essen 1"
+    },
+    {
+      "id": "3",
+      "nombre": "Olla essen 2",
+      "precio": "68000",
+      "category": "ollas",
+      "img": "https://www.essen.com.ar/contenido/objetos/1/Cac%2028%20Aqua.jpg",
+      "stock": "30",
+      "descripcion": "olla essen 2"
+    },
+    {
+      "id": "4",
+      "nombre": "Olla Essen 3",
+      "precio": "68000",
+      "category": "ollas",
+      "img": "https://www.essen.com.ar/contenido/objetos/1/terracacerola24cm.jpg",
+      "stock": "30",
+      "descripcion": "olla essen 3"
+    },
+    {
+      "id": "5",
+      "nombre": "sartén Essen 1",
+      "precio": "68000",
+      "category": "sarten",
+      "img": "https://www.essen.com.ar/contenido/objetos/1/Sarten_24_Cherry.png",
+      "stock": "30",
+      "descripcion": "olla essen 1"
+    },
+    {
+      "id": "6",
+      "nombre": "sartén Essen 2",
+      "precio": "68000",
+      "category": "sarten",
+      "img": "https://www.essen.com.ar/contenido/objetos/1/aquacacerolaconasas31cm.jpg",
+      "stock": "30",
+      "descripcion": "olla essen 1"
+    },
+    {
+      "id": "7",
+      "nombre": "Jarra Essen 2",
+      "precio": "78000",
+      "category": "jarras",
+      "img": "https://alasenessen.com.ar/wp-content/uploads/2023/09/jarroquick-cherry-recorte.png",
+      "stock": "20",
+      "descripcion": "Jarra Essen 2"
+    }
+  ]
+  

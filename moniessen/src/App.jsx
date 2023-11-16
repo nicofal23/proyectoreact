@@ -5,11 +5,13 @@ import './components/NavBar/NavBar.module.css'
 import './app.css';
 import ImagenLogo from './components/Logo/ImagenLogo';
 import RouterPrincipal from './routers/RouterPrincipal';
+
 const App = () => {
     return (
       <>
         <header>
             <ImagenLogo />
+            
         </header>
         <main>
             <RouterPrincipal/>

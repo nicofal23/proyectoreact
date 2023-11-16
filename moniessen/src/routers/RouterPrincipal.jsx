@@ -6,7 +6,6 @@ import NavBar from "../components/NavBar/NavBar";
 const RouterPrincipal = () => {
   return (
     <BrowserRouter>
-      {/* Solo necesitas BrowserRouter en el nivel más alto */}
       <>
         <NavBar />
         <Routes>
