@@ -8,26 +8,23 @@ const NavBar = () => {
     <nav className={style.NavBar}>
       <ul className={style.moni}>
         <li>
-          <NavLink to="/" end>  Inicio
+          <NavLink to="/" end className={style.ActiveOption}>  Inicio
           </NavLink>
         </li>
       </ul>
       <ul className={style.cate}>
         <li>
-          <NavLink to="/category/ollas" className={({ isActive }) => (isActive ? 'ActiveOption' : 'Option')}>
+          <NavLink to="/category/ollas" className={style.ActiveOption}>
             Ollas
           </NavLink>
         </li>
         <li>
-          <NavLink to="/category/jarras" className={({ isActive }) =>  {
-            console.log('isActive ollas:', isActive);
-            return isActive ? 'ActiveOption' : 'Option';
-          }}>
+          <NavLink to="/category/jarras" className={style.ActiveOption}>
             Jarras
           </NavLink>
         </li>
         <li>
-          <NavLink to="/category/sarten" className={({ isActive }) => (isActive ? 'ActiveOption' : 'Option')}>
+          <NavLink to="/category/sarten" className={style.ActiveOption}>
             Sartén
           </NavLink>
         </li>

@@ -31,11 +31,13 @@
     justify-content: flex-end;
 }
 
-.option {
-    background-color: #007bff;
+
+.Option {
+    background-color: #e878a2;
     color: #fff;
     padding: 8px 16px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-}
+    text-decoration: none;
+  }

@@ -68,3 +68,14 @@
   list-style: none;
   text-decoration: none;
 }
+
+
+.ActiveOption {
+  background-color: #e878a2;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+}
