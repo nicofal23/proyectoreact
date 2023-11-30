@@ -1,4 +1,4 @@
-import {img} from '../NavBar/NavBar.module.css'
+import styles from '../CartWidget/CartWidget.module.css'
 import { CartContext } from '../../context/CartContext';
 import { Link } from 'react-router-dom';
 import { useContext } from 'react';
@@ -9,7 +9,7 @@ import { useContext } from 'react';
 
     return (
       <Link to="/cart" className='CarWiget' style={{display: totalCantidad > 0 ?'block' : 'none'}}>
-        <img src="../../src/assets/img/carrito.png" alt="" className={img}/>
+        <img src="../../src/assets/img/carrito.png" alt="" className={styles.img}/>
         {totalCantidad}
       </Link>
     );
