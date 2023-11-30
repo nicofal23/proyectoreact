@@ -10,16 +10,17 @@ export const CartProvider = ({ children }) => {
     
     console.log(cart);
 
-    const addItem = (item, nombre, precio, cantidad, img ) => {
-        if (!isInCart(item.id)) {
-            setCart(prev => [...prev, { item, nombre, precio, cantidad, img }]);
+    const addItem = (item, nombre, precio, cantidad, img) => {
+        const existingItem = cart.find(prod => prod.item.id === item.id);
+        if (existingItem) {
+            existingItem.cantidad += cantidad;
         } else {
-            console.error('El item ya existe en el carrito');
+            setCart(prev => [...prev, { item, nombre, precio, cantidad, img }]);
         }
     }
 
     const removeItem = (itemId) => {
-        const cartUpdated = cart.filter(prod => prod.id !== itemId);
+        const cartUpdated = cart.filter(prod => prod.item.id !== itemId);
         setCart(cartUpdated);
     }
 
@@ -27,12 +28,8 @@ export const CartProvider = ({ children }) => {
         setCart([]);
     }   
 
-    const isInCart = (itemId) => {
-        return cart.some(prod => prod.id === itemId);
-    }
-
     return (
-        <CartContext.Provider value={{ cart, addItem, removeItem, clearCart, isInCart }}>
+        <CartContext.Provider value={{ cart, addItem, removeItem, clearCart }}>
             {children}
         </CartContext.Provider>
     );
