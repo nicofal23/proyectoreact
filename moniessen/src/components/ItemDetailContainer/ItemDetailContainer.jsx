@@ -1,21 +1,33 @@
 import { useState ,useEffect} from "react";
-import { getProductosByCategory, getProductos ,getProductosById } from '../../asyncMock';
 import ItemDetail from '../ItemDetail/ItemDetail';
 import style from '../ItemDetailContainer/ItemDetailContainer.module.css'
 import { useParams } from "react-router-dom";
+import {db} from '../../firebase/cliente';
+import { getDocs, collection, query, where } from 'firebase/firestore';
 
 const ItemDetailContainer = () => {
     const [productos, setProductos] = useState(null)
+    const [loading, setLoading] = useState(true)    
     const {itemId} = useParams()
 
     useEffect(() => {
-        getProductosById(itemId)
-        .then(response => {
-            setProductos(response)
-        })
-        .catch(error => {
-            console.error(error)
-        })
+        setLoading(true)
+
+        const collectionRef = collection(db, 'productos');
+        const q = query(collectionRef, where('id', '==', itemId));
+
+        getDocs(q)
+            .then(response => {
+                const data = response.data()
+                const productosAdapted = {id: response.id, ...data}
+                setProductos(productosAdapted)
+            })
+            .catch(error => {
+                console.log(error)
+            })
+            .finally(() => {
+                setLoading(false)
+            })
 },[itemId])
 
     return(
@@ -25,7 +37,6 @@ const ItemDetailContainer = () => {
         </div>
     </div>
     )
-
 }
 
 export default ItemDetailContainer

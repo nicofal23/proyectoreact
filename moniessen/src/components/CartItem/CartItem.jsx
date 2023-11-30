@@ -1,6 +1,6 @@
 import React from 'react';
 
-const CartItem = ({ id, nombre, precio, cantidad, img }) => {
+const CartItem = ({ id, nombre, precio, stock, img }) => {
     return (
         <div className="card mb-3" style={{ maxWidth: '540px' }}>
             <div className="row g-0">
@@ -11,7 +11,7 @@ const CartItem = ({ id, nombre, precio, cantidad, img }) => {
                     <div className="card-body">
                         <h5 className="card-title">{nombre}</h5>
                         <p className="card-text">ID: {id}</p>
-                        <p className="card-text">Cantidad: {cantidad}</p>
+                        <p className="card-text">Cantidad: {stock}</p>
                         <p className="card-text">Precio: ${precio}</p>
                     </div>
                 </div>

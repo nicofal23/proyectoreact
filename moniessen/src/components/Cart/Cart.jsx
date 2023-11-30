@@ -6,6 +6,7 @@ import CartItem from "../CartItem/CartItem";
 const Cart = () => {
     const { cart, clearCart, total } = useContext(CartContext);
     console.log(cart);
+    
     if (cart.length === 0) {
         return (
             <div className="container">
