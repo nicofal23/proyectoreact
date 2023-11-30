@@ -9,8 +9,8 @@ const CartItem = ({ item, id, nombre, precio, stock, img }) => {
                 </div>
                 <div className="col-md-8">
                     <div className="card-body">
-                        <h5 className="card-title">{item.nombre}</h5>
-                        <p className="card-text">ID: {item.id}</p>
+                        <img src={item.img} alt={item.nombre} />
+                        <h5 className="card-title">Producto: {item.nombre}</h5>
                         <p className="card-text">Cantidad: {item.cantidad}</p>
                         <p className="card-text">Precio: ${item.precio}</p>
                         <img src="${item.img}" alt="" />
