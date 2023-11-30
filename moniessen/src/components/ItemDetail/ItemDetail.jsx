@@ -11,7 +11,9 @@ const ItemDetail = ({ id, nombre, img, precio, stock, categoria, descripcion }) 
     const handleOnAdd = (cantidad) => {
         setCantidadAgregada(cantidad);
         const item = {
-            id, nombre, precio
+            id, 
+            nombre,
+            precio
     }
     addItem(item, cantidad);
 }

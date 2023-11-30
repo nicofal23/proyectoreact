@@ -10,9 +10,9 @@ export const CartProvider = ({ children }) => {
     
     console.log(cart);
 
-    const addItem = (item, cantidad) => {
+    const addItem = (item, nombre, precio, cantidad, img ) => {
         if (!isInCart(item.id)) {
-            setCart(prev => [...prev, { item, cantidad }]);
+            setCart(prev => [...prev, { item, nombre, precio, cantidad, img }]);
         } else {
             console.error('El item ya existe en el carrito');
         }
