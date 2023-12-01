@@ -8,11 +8,11 @@ Inserta aquí algunas capturas de pantalla de tu aplicación para dar una vista 
 
 ## Captura de Pantalla 1
 
-<img src="https://i.ibb.co/XSLjQyF/img1.png" alt="captura 1" style= "width:300px">
+<img src="https://i.ibb.co/XSLjQyF/img1.png" alt="captura 1" style= "width:600px">
 
 ## Captura de Pantalla 2
 
-<img src="https://i.ibb.co/6DnDfGR/img2.png" alt="captura 2">
+<img src="https://i.ibb.co/6DnDfGR/img2.png" alt="captura 2" style= "width:600px">
 
 ## Tecnologías Utilizadas
 
