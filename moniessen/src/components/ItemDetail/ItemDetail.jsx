@@ -13,7 +13,8 @@ const ItemDetail = ({ id, nombre, img, precio, stock, categoria, descripcion }) 
         const item = {
             id, 
             nombre,
-            precio
+            precio,
+            img
     }
     addItem(item, cantidad);
 }

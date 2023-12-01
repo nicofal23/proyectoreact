@@ -7,7 +7,7 @@ export const CartContext = createContext({
 export const CartProvider = ({ children }) => {
   const [cart, setCart] = useState([]);
 
-  const addItem = (item, cantidad, imgURL) => {
+  const addItem = (item, cantidad) => {
     const existingItemIndex = cart.findIndex((prod) => prod.item.id === item.id);
   
     if (existingItemIndex !== -1) {
@@ -20,7 +20,7 @@ export const CartProvider = ({ children }) => {
       });
       setCart(newCart);
     } else {
-      setCart([...cart, { item, cantidad, img }]);
+      setCart([...cart, { item, cantidad }]);
     }
   };
 
