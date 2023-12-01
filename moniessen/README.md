@@ -6,8 +6,13 @@ Bienvenido al repositorio de mi proyecto de ventas de ollas Essen desarrollado e
 
 Inserta aquí algunas capturas de pantalla de tu aplicación para dar una vista previa visual del proyecto.
 
-![Captura de Pantalla 1](https://ibb.co/xJLXkmz)
-![Captura de Pantalla 2](https://ibb.co/9y8yCB9)
+## Captura de Pantalla 1
+
+<img src="https://i.ibb.co/XSLjQyF/img1.png" alt="captura 1">
+
+## Captura de Pantalla 2
+
+<img src="https://i.ibb.co/6DnDfGR/img2.png" alt="captura 2">
 
 ## Tecnologías Utilizadas
 
