@@ -4,6 +4,8 @@ import ItemDetailContainer from "../components/ItemDetailContainer/ItemDetailCon
 import NavBar from "../components/NavBar/NavBar";
 import { CartProvider } from "../context/CartContext";
 import Cart from "../components/Cart/Cart";
+import Order from "../components/Order/Order.jsx";
+
 const RouterPrincipal = () => {
   return (
     <BrowserRouter>
@@ -14,7 +16,7 @@ const RouterPrincipal = () => {
             <Route path="/category/:categoryId" element={<ItemListContainer />}></Route>
             <Route path="/item/:itemId" element={<ItemDetailContainer />} />
             <Route path="/cart" element={<Cart/>} />
-            <Route path="*" element={<h1>404 NOT FOUND</h1>} />
+            <Route path="/checkout" element={<Order/>} />
           </Routes>
         </CartProvider>
     </BrowserRouter>
