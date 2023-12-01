@@ -8,7 +8,7 @@ Inserta aquí algunas capturas de pantalla de tu aplicación para dar una vista 
 
 ## Captura de Pantalla 1
 
-<img src="https://i.ibb.co/XSLjQyF/img1.png" alt="captura 1">
+<img src="https://i.ibb.co/XSLjQyF/img1.png" alt="captura 1" style= "width:300px">
 
 ## Captura de Pantalla 2
 
