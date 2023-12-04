@@ -1,3 +1,4 @@
+//itemlist.jsx
 import Item from '../Item/Item';
 import styles from '../ItemList/ItemList.module.css';
 const ItemList = ({ productos }) => {

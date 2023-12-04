@@ -1,7 +1,12 @@
-import { createContext, useState } from "react";
+// CartContext.jsx
+import { createContext, useState } from 'react';
 
 export const CartContext = createContext({
   cart: [],
+  addItem: (item, cantidad) => {},
+  removeItem: (itemId) => {},
+  clearCart: () => {},
+  getTotalItems: () => 0,
 });
 
 export const CartProvider = ({ children }) => {
@@ -9,7 +14,7 @@ export const CartProvider = ({ children }) => {
 
   const addItem = (item, cantidad) => {
     const existingItemIndex = cart.findIndex((prod) => prod.item.id === item.id);
-  
+
     if (existingItemIndex !== -1) {
       const newCart = cart.map((prod) => {
         if (prod.id === item.id) {
@@ -35,13 +40,13 @@ export const CartProvider = ({ children }) => {
 
   const getTotalItems = () => {
     let x = 0;
-    x = cart.reduce((acc, curr) => acc + curr.cantidad, 0); 
+    x = cart.reduce((acc, curr) => acc + curr.cantidad, 0);
     console.log(x);
     return x;
   };
 
   return (
-    <CartContext.Provider value={{ cart, addItem, removeItem, clearCart }}>
+    <CartContext.Provider value={{ cart, addItem, removeItem, clearCart, getTotalItems }}>
       {children}
     </CartContext.Provider>
   );
