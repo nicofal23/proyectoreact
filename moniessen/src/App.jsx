@@ -10,7 +10,7 @@ const App = () => {
     return (
       <>
         <header>
-            <ImagenLogo />
+            <ImagenLogo /> 
             
         </header>
         <main>
