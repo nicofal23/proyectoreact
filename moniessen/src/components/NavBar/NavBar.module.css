@@ -82,3 +82,24 @@
   cursor: pointer;
   text-decoration: none;
 }
+
+
+/* ... Otros estilos ... */
+
+.burgerMenu {
+  display: none;
+}
+
+.open {
+  display: flex !important;
+}
+
+@media screen and (max-width: 920px) {
+  .moni, .cate {
+    display: none;
+  }
+
+  .burgerMenu {
+    display: block;
+  }
+}
