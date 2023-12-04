@@ -3,6 +3,7 @@ import { useContext } from "react";
 import { CartContext } from "../../context/CartContext";
 import { Link } from "react-router-dom";
 import CartItem from "../CartItem/CartItem";
+import styles from "../Cart/Cart.module.css";
 
 const Cart = () => {
   const { cart, clearCart } = useContext(CartContext);
@@ -17,11 +18,13 @@ const Cart = () => {
   }
 
   return (
-    <div>
+    <div className={styles.contenedorcart} >
       {cart.map((item) => <CartItem key={item.item.id} item={item} />)}
       <h3>Total: $ {cart.reduce((acc, curr) => acc + curr.item.precio * curr.cantidad, 0)}</h3>
-      <button onClick={() => clearCart()}>Vaciar carrito</button>
+      <div className={styles.button}>
+      <button onClick={() => clearCart()} className='btn btn-primary'>Vaciar carrito</button>
       <Link to='/checkout' className='btn btn-primary'>Checkout</Link>
+      </div>
     </div>
   );
 };

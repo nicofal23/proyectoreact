@@ -44,7 +44,10 @@
   width: 40px;
 }
 
-
+.moni {
+  display: flex;
+  align-items: center;
+}
 .carrito {
   background-color: transparent;
   border: none;
@@ -57,9 +60,9 @@
 .cate {
   display: flex;
   gap: 1.25rem;
+  align-items: center;
 }
 
-/* App.css */
 .cate li {
   list-style: none;
   text-decoration: none;
