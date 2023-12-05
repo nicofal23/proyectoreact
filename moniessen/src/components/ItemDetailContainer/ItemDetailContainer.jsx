@@ -15,7 +15,7 @@ const ItemDetailContainer = () => {
         setLoading(true)
     
         const docRef = doc(db, 'productos', itemId)
-    
+     
         getDoc(docRef)
             .then(response => {
                 const data = response.data()

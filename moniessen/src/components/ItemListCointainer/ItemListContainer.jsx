@@ -12,7 +12,7 @@ const ItemListContainer = ({ greeting }) => {
 
   useEffect(() => {
     setLoading(true)
-
+ 
     const collectionRef = categoryId
       ? query(collection(db, 'productos'), where('category', '==', categoryId))
       : collection(db, 'productos')

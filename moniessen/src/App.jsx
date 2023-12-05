@@ -11,7 +11,7 @@ const App = () => {
       <>
         <header>
             <ImagenLogo /> 
-            
+             
         </header>
         <main>
             <RouterPrincipal/>

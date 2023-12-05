@@ -14,7 +14,7 @@ export const CartProvider = ({ children }) => {
 
   const addItem = (item, cantidad) => {
     const existingItemIndex = cart.findIndex((prod) => prod.item.id === item.id);
-
+ 
     if (existingItemIndex !== -1) {
       const newCart = cart.map((prod) => {
         if (prod.id === item.id) {

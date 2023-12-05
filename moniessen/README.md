@@ -14,7 +14,7 @@ Inserta aquí algunas capturas de pantalla de tu aplicación para dar una vista 
 
 <img src="https://i.ibb.co/6DnDfGR/img2.png" alt="captura 2" style= "width:600px">
 
-## Tecnologías Utilizadas
+## Tecnologías Utilizadas 
 
 - **React**: La interfaz de usuario se construye utilizando React, permitiendo una estructura de componentes modular y mantenible.
 

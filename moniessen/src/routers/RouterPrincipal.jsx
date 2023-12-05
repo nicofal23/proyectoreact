@@ -10,7 +10,7 @@ const RouterPrincipal = () => {
   return (
     <BrowserRouter>
       <CartProvider>
-        <NavBar />
+        <NavBar /> 
           <Routes>
             <Route path="/" element={<ItemListContainer />} />
             <Route path="/category/:categoryId" element={<ItemListContainer />}></Route>

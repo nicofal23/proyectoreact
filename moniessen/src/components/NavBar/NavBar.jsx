@@ -9,7 +9,7 @@ const NavBar = () => {
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
-
+ 
   return (
     <nav className={style.NavBar}>
       <button onClick={toggleMenu} className={style.burgerMenu}>☰</button>

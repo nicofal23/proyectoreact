@@ -20,7 +20,7 @@ const CartItem = ({ item }) => {
                     </div>
                 </div>
             </div>
-        </div>
+        </div> 
     );
 };
 

@@ -16,7 +16,7 @@ const ItemCount = ({ stock, inicial, onAdd }) => {
     if (cantidad > 1) {
       setCantidad(cantidad - 1);
     }
-  };
+  }; 
 
   const showAddToCartAlert = () => {
     const Toast = Swal.mixin({
