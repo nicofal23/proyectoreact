@@ -1,5 +1,7 @@
+// ItemCount.jsx
 import React, { useState } from "react";
 import styles from "../ItemCount/ItemCount.module.css";
+import Swal from "sweetalert2";
 
 const ItemCount = ({ stock, inicial, onAdd }) => {
   const [cantidad, setCantidad] = useState(inicial);
@@ -16,6 +18,30 @@ const ItemCount = ({ stock, inicial, onAdd }) => {
     }
   };
 
+  const showAddToCartAlert = () => {
+    const Toast = Swal.mixin({
+      toast: true,
+      position: "top-end",
+      showConfirmButton: false,
+      timer: 1500,
+      timerProgressBar: true,
+      didOpen: (toast) => {
+        toast.onmouseenter = Swal.stopTimer;
+        toast.onmouseleave = Swal.resumeTimer;
+      },
+    });
+
+    Toast.fire({
+      icon: "success",
+      title: "Producto agregado al carrito",
+    });
+  };
+
+  const handleOnAddClick = () => {
+    onAdd && onAdd(cantidad);
+    showAddToCartAlert();
+  };
+
   return (
     <div className={styles.contador}>
       <div className={styles.control}>
@@ -30,7 +56,7 @@ const ItemCount = ({ stock, inicial, onAdd }) => {
       <div>
         <button
           className={styles.boton}
-          onClick={() => onAdd && onAdd(cantidad)}
+          onClick={handleOnAddClick}
           disabled={stock < 1}
         >
           Agregar al carrito

@@ -1,3 +1,4 @@
+//itemdetail.jsx
 import styles from '../ItemDetail/ItemDetail.module.css';
 import ItemCount from '../ItemCount/ItemCount';
 import { Link } from 'react-router-dom';

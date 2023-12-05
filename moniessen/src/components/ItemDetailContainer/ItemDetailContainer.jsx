@@ -1,3 +1,4 @@
+//itemdetailcontainer.jsx
 import { useState ,useEffect} from "react";
 import ItemDetail from '../ItemDetail/ItemDetail';
 import style from '../ItemDetailContainer/ItemDetailContainer.module.css'

@@ -1,0 +1,796 @@
+Synthesizing 10/10 solutions
+
+=======
+Suggestion 1
+
+.ActiveOption:hover {
+  background-color: #c2c2c2;
+  color: #fff;
+}
+
+@media screen and (max-width: 920px) {
+  .moni, .cate {
+    display: none;
+  }
+}
+
+.burgerMenu {
+  display: none;
+}
+
+.open {
+  display: flex;
+}
+
+@media screen and (max-width: 920px) {
+  .moni, .cate {
+    display: none;
+  }
+
+  .burgerMenu {
+    display: block;
+  }
+}
+
+/* Path: moniessen/src/components/NavBar/NavBar.module.css */
+.NavBar {
+  text-decoration: none;
+  color: #e878a2;
+  position: relative;
+  font-size: 20px;
+  display: flex;
+  flex-direction: row;
+    justify-content: space-between;
+}
+.titulo {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  text-align: center;
+  -webkit-animation: slide-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  margin: 3.125rem;
+}
+.moniessen {
+  width: 6.375rem;
+  height: 6.375rem;
+  margin: 20px;
+}
+
+.carrito {
+  border: none;
+  color: #0a0a0a;
+  font-size: 30px;
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 70%;
+  padding: 10px 20px;
+}
+
+.carrito:hover {
+  color: rgba(255, 255, 255, 0);
+  background-color: rgba(130, 236, 135, 0.171);
+}
+
+.cantidadCarrito {
+  color: black;
+}
+
+.img {
+  width: 40px;
+}
+
+.moni {
+  display: flex;
+  align-items: center;
+}
+.carrito {
+  background-color: transparent;
+  border: none;
+}
+
+.button {
+  background-color: transparent;
+  border: none;
+}
+.cate {
+  display: flex;
+  gap: 1.25rem;
+  align-items
+
+=======
+Suggestion 2
+
+.ActiveOption:hover {
+  background-color: #e878a2;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.ActiveOption:active {
+  transform: translateY(4px);
+}
+
+.ActiveOption:focus {
+  outline: none;
+}
+
+.ActiveOption:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+=======
+Suggestion 3
+
+.ActiveOption:hover {
+  background-color: #e878a2;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.Options {
+  background-color: #e878a2;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+=======
+Suggestion 4
+
+.ActiveOption:hover {
+  background-color: #e878a2;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.ActiveOption:active {
+  background-color: #e878a2;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.ActiveOption:focus {
+  background-color: #e878a2;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.ActiveOption:visited {
+  background-color: #e878a2;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.ActiveOption:link {
+  background-color: #e878a2;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.ActiveOption:target {
+  background-color: #e878a2;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.ActiveOption:lang() {
+  background-color: #e878a2;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+=======
+Suggestion 5
+
+.ActiveOption:hover {
+  background-color: #d66d95;
+}
+
+.ActiveOption:active {
+  background-color: #d66d95;
+}
+
+.ActiveOption:focus {
+  outline: none;
+}
+
+.ActiveOption:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.ActiveOption:disabled:hover {
+  background-color: #ccc;
+}
+
+.ActiveOption:disabled:active {
+  background-color: #ccc;
+}
+
+.ActiveOption:disabled:focus {
+  outline: none;
+}
+
+.ActiveOption:disabled {
+  color: #666666;
+}
+
+.ActiveOption:disabled:hover {
+  color: #666666;
+}
+
+.ActiveOption:disabled:active {
+  color: #666666;
+}
+
+.ActiveOption:disabled:focus {
+  color: #666666;
+}
+
+.ActiveOption--primary {
+  background-color: #e878a2;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.ActiveOption--primary:hover {
+  background-color: #d66d95;
+}
+
+.ActiveOption--primary:active {
+  background-color: #d66d95;
+}
+
+.ActiveOption--primary:focus {
+  outline: none;
+}
+
+.ActiveOption--primary:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.ActiveOption--primary:disabled:hover {
+  background-color: #ccc;
+}
+
+.ActiveOption--primary:disabled:active {
+  background-color: #ccc;
+}
+
+.ActiveOption--primary:disabled:focus {
+  outline: none;
+}
+
+.ActiveOption--primary:disabled {
+  color: #666666;
+}
+
+.ActiveOption--primary:disabled:hover {
+  color: #666666;
+}
+
+.ActiveOption--primary:disabled:active {
+  color: #666666;
+}
+
+.ActiveOption--primary:disabled:focus {
+  color: #666666;
+}
+
+.ActiveOption--secondary {
+  background-color: #e878a2;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.ActiveOption--secondary:hover {
+  background-color: #d66d95;
+}
+
+.ActiveOption--secondary:active {
+  background-color: #d66d95;
+}
+
+.ActiveOption--secondary:focus {
+  outline: none;
+}
+
+.ActiveOption
+
+=======
+Suggestion 6
+
+.ActiveOption:hover {
+  background-color: #e878a2;
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: #e878a2;
+}
+
+a:hover {
+  color: #e878a2;
+}
+
+.burgerMenu {
+  display: none;
+}
+
+@media screen and (max-width: 920px) {
+  .moni, .cate {
+    display: none;
+  }
+
+  .burgerMenu {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .moni, .cate {
+    display: none;
+  }
+
+  .burgerMenu {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .moni, .cate {
+    display: none;
+  }
+
+  .burgerMenu {
+    display: block;
+  }
+}
+
+=======
+Suggestion 7
+
+.ActiveOption:hover {
+  background-color: #e878a2;
+}
+
+.ActiveOption:active {
+  background-color: #e878a2;
+}
+
+.ActiveOption:focus {
+  background-color: #e878a2;
+}
+
+.ActiveOption:visited {
+  background-color: #e878a2;
+}
+
+.ActiveOption:link {
+  background-color: #e878a2;
+}
+
+.ActiveOption:disabled {
+  background-color: #e878a2;
+}
+
+.ActiveOption:active,
+.ActiveOption:hover {
+  background-color: #e878a2;
+}
+
+.ActiveOption:active {
+  background-color: #e878a2;
+}
+
+.ActiveOption:focus {
+  background-color: #e878a2;
+}
+
+.ActiveOption:visited {
+  background-color: #e878a2;
+}
+
+.ActiveOption:link {
+  background-color: #e878a2;
+}
+
+.ActiveOption:disabled {
+  background-color: #e878a2;
+}
+
+.ActiveOption:active,
+.ActiveOption:hover {
+  background-color: #e878a2;
+}
+
+.ActiveOption:active {
+  background-color: #e878a2;
+}
+
+.ActiveOption:focus {
+  background-color: #e878a2;
+}
+
+.ActiveOption:visited {
+  background-color: #e878a2;
+}
+
+.ActiveOption:link {
+  background-color: #e878a2;
+}
+
+.ActiveOption:disabled {
+  background-color: #e878a2;
+}
+
+.ActiveOption:active,
+.ActiveOption:hover {
+  background-color: #e878a2;
+}
+
+.ActiveOption:active {
+  background-color: #e878a2;
+}
+
+.ActiveOption:focus {
+  background-color: #e878a2;
+}
+
+.ActiveOption:visited {
+  background-color: #e878a2;
+}
+
+.ActiveOption:link {
+  background-color: #e878a2;
+}
+
+.ActiveOption:disabled {
+  background-color: #e878a2;
+}
+
+.ActiveOption:active,
+.ActiveOption:hover {
+  background-color: #e878a2;
+}
+
+.ActiveOption:active {
+  background-color: #e878a2;
+}
+
+.ActiveOption:focus {
+  background-color: #e878a2;
+}
+
+.ActiveOption:visited {
+  background-color: #e878a2;
+}
+
+.ActiveOption:link {
+  background-color: #e878a2;
+}
+
+.ActiveOption:disabled {
+  background-color: #e878a2;
+}
+
+.ActiveOption:active,
+.ActiveOption:hover {
+
+=======
+Suggestion 8
+
+.ActiveOption:hover {
+  background-color: #e878a2;
+  opacity: 0.8;
+}
+
+.ActiveOption:active {
+  background-color: #e878a2;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.ActiveOption:focus {
+  outline: none;
+}
+/* ... Otros estilos ... */
+.burgerMenu {
+  display: none;
+}
+.open {
+  display: flex;
+}
+@media screen and (max-width: 920px) {
+  .moni, .cate {
+    display: none;
+  }
+  .burgerMenu {
+    display: block;
+  }
+}
+
+/* Path: moniessen/src/components/NavBar/NavBar.module.css */
+.NavBar {
+  text-decoration: none;
+  color: #e878a2;
+  position: relative;
+  font-size: 20px;
+  display: flex;
+  flex-direction: row;
+    justify-content: space-between;
+}
+
+.titulo {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  text-align: center;
+  -webkit-animation: slide-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  margin: 3.125rem;
+}
+
+.moniessen {
+  width: 6.375rem;
+  height: 6.375rem;
+  margin: 20px;
+}
+
+.carrito {
+  border: none;
+  color: #0a0a0a;
+  font-size: 30px;
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 70%;
+  padding: 10px 20px;
+}
+
+.carrito:hover {
+  color: rgba(255, 255, 255, 0);
+  background-color: rgba(130, 236, 135, 0.171);
+}
+
+.cantidadCarrito {
+  color: black;
+}
+
+.img {
+  width: 40px;
+}
+
+.moni {
+  display: flex;
+  align-items: center;
+}
+
+.carrito {
+  background-color: transparent;
+  border: none;
+}
+
+.button {
+  background-color: transparent;
+
+=======
+Suggestion 9
+
+.ActiveOption:hover {
+  background-color: #e878a2;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.ActiveOption:active {
+  background-color: #e878a2;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.ActiveOption:focus {
+  background-color: #e878a2;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.ActiveOption:visited {
+  background-color: #e878a2;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* ANIMACIONES */
+@-webkit-keyframes slide-bottom {
+  0% {
+    -webkit-transform: translateY(-50px);
+    transform: translateY(-50px);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+@keyframes slide-bottom {
+  0% {
+    -webkit-transform: translateY(-50px);
+    transform: translateY(-50px);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+/* Path: moniessen/src/components/NavBar/NavBar.module.css */
+.NavBar {
+  text-decoration: none;
+  color: #e878a2;
+  position: relative;
+  font-size: 20px;
+  display: flex;
+  flex-direction: row;
+    justify-content: space-between;
+}
+.titulo {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  text-align: center;
+  -webkit-animation: slide-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-bottom 0.5s cubic-bezier(0.25, 0.
+
+=======
+Suggestion 10
+
+@media (min-width: 768px) {
+  .NavBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+    height: 6rem;
+    background-color: white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  .moni {
+    display: flex;
+    align-items: center;
+  }
+  .cate {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+  }
+  .moni, .cate {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+  }
+  .moni a {
+    color: #e878a2;
+    text-decoration: none;
+  }
+  .moni a:hover {
+    color: #e878a2;
+    text-decoration: none;
+  }
+  .cate a {
+    color: #e878a2;
+    text-decoration: none;
+  }
+  .cate a:hover {
+    color: #e878a2;
+    text-decoration: none;
+  }
+  .moni li {
+    list-style: none;
+    text-decoration: none;
+  }
+  .moni li:hover {
+    list-style: none;
+    text-decoration: none;
+  }
+  .cate li {
+    list-style: none;
+    text-decoration: none;
+  }
+  .cate li:hover {
+    list-style: none;
+    text-decoration: none;
+  }
+  .ActiveOption {
+    background-color: #e878a2;
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  .ActiveOption:hover {
+    background-color: #e878a2;
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  .ActiveOption a {
+    color: #fff;
+    text-decoration: none;
+  }
+  .ActiveOption a:hover {
+    color: #fff;
+    text-decoration: none;
+  }
+  .carrito {
+    background-color: transparent;
+    border
